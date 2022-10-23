@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <main>
+    <body>
+      <div>
+        <div class="block">
+          <hr class="hr2" />
+          <h1 class="align-center" id="title">Test Survey Form</h1>
+          <p class="description" id="description">This is a test survey form</p>
+          <hr class="hr1" />
+          <form id="survey-form">
+            <label id="name-label" for="name">
+              <p class="text">Name</p>
+              <input
+                class="inputs"
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Enter your name"
+              />
+            </label>
+
+            <label class="text" id="email-label" for="email">
+              Email
+              <input
+                class="inputs"
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Enter your Email"
+              />
+            </label>
+            <label class="text" id="number-label" for="number">
+              Age (optional)
+              <input
+                class="inputs"
+                type="number"
+                name="number"
+                id="number"
+                placeholder="Age"
+                min="18"
+                max="100"
+            /></label>
+
+            <label class="text" for="dropdown">
+              Which option best describes your current role?</label
+            >
+
+            <select class="options" name="dropdown" id="dropdown">
+              <option>Select Role</option>
+              <option value="student">Student</option>
+              <option value="full-time">Full time job</option>
+            </select>
+
+            <label class="like-the-site">
+              <p>Do you like the site?</p>
+            </label>
+
+            <label class="radio-options" for="yes">
+              <input
+                class="radio-options"
+                type="radio"
+                name="recommend"
+                id="yes"
+                value="yes"
+              />
+              Definetly</label
+            >
+
+            <label class="radio-options" for="no">
+              <input type="radio" name="recommend" id="no" value="no" /> Not
+              really
+            </label>
+
+            <p class="like-the-site">What didn't you like about the site?</p>
+
+            <div class="check-options">
+              <label for="style">
+                <input type="checkbox" name="not-liking" id="style" value="1" />
+                Style
+              </label>
+              <label class="radio-options" for="text">
+                <input
+                  class="check-options"
+                  type="checkbox"
+                  name="not-liking"
+                  id="text"
+                  value="2"
+                />
+                Text
+              </label>
+              <label class="radio-options" for="nothing">
+                <input
+                  type="checkbox"
+                  name="not-liking"
+                  id="nothing"
+                  value="3"
+                />
+                Nothing
+              </label>
+
+              <label class="radio-options" for="comments">
+                <p class="like-the-site">Any comments or suggestions?</p>
+              </label>
+            </div>
+            <textarea
+              name="comments"
+              id="comments"
+              cols="40"
+              rows="8"
+              placeholder="Enter your comments here..."
+              class="text-area"
+            ></textarea>
+
+            <button type="submit" id="submit" name="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </body>
+  </main>
+</html>
