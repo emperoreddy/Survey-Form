@@ -1,8 +1,9 @@
 body {
-    background: linear-gradient(to top, #3204fdba, #a507facc), url(https://picsum.photos/1280/853/?random=1)  top center;
-    /* font-family: sans-serif,Arial, Helvetica; */
+    /* background: linear-gradient(to top, #3204fdba, #a507facc), url(https://picsum.photos/1280/853/?random=1)  top center; */
     font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
     color: #ffffff;
+    background: rgb(59,3,151);
+background: linear-gradient(90deg, rgba(59,3,151,1) 0%, rgba(104,49,192,1) 32%, rgba(104,49,192,1) 70%, rgba(59,3,151,1) 100%);
 }
 
 .align-center {
@@ -15,7 +16,7 @@ body {
     min-width: 400px;
     max-width: 700px;
     height: 85rem;
-    background-color: rgba(50, 0, 81, 0.794);
+    background-color: rgba(19, 0, 49, 0.451);
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
